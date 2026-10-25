@@ -1,0 +1,6 @@
+{
+  "name": "MLH Hacktoberfest Hack Days — Haldia '26",
+  "description": "Official portal for Hack4Haldia'26 x Voyage & Hacktoberfest Hack Day Haldia x GRID Community. 8-hour AI challenge & 12-hour open source festival.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
