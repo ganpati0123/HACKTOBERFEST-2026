@@ -92,9 +92,13 @@ export const GridEventCard: React.FC<GridEventCardProps> = ({ onOpenRegisterModa
               <span className="text-white font-bold">Hotel Royal Harbour, Haldia</span>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-200 mb-3 font-semibold">
-              <span>Lead Organizer:</span>
+            <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-xs text-emerald-200 mb-3 font-semibold">
+              <span>Lead Organizers:</span>
               <strong className="text-white">Ganpati Raj</strong>
+              <span className="text-slate-400 font-normal">(Founder @ GRID)</span>
+              <span>&</span>
+              <strong className="text-white">Dev Upadhyay</strong>
+              <span className="text-slate-400 font-normal">(Lead Organizer)</span>
               <span>with GRID Core Team</span>
             </div>
 

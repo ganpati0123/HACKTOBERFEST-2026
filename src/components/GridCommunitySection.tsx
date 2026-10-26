@@ -7,7 +7,7 @@ export const GridCommunitySection: React.FC = () => {
     {
       quote: "From managing high-speed networking and power docks at Hotel Royal Harbour to coordinating MLH sponsor perks, our goal is to give every hacker an unforgettable, tier-1 hackathon experience right here in Haldia.",
       author: "Dev Upadhyay",
-      role: "Core Organizer · GRID Community",
+      role: "Lead Organizer at Voyage & Hack Day Haldia",
       track: "Operations & Hacker Experience"
     },
     {
@@ -81,7 +81,7 @@ export const GridCommunitySection: React.FC = () => {
             <div>
               <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">
                 <ShieldCheck className="w-4 h-4 text-cyan-400" />
-                <span>LEADERSHIP: GANPATI RAJ & CORE BUILDERS</span>
+                <span>LEADERSHIP: GANPATI RAJ, KRISHAN LAL, DEV UPADHYAY & CORE BUILDERS</span>
               </div>
               <h3 className="text-xl sm:text-3xl font-extrabold font-display text-white mt-1">
                 Cultivating India's Next Generation of Tech Leaders

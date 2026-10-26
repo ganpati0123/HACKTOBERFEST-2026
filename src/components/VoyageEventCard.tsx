@@ -52,9 +52,12 @@ export const VoyageEventCard: React.FC<VoyageEventCardProps> = ({ onOpenRegister
               <span>Lead Organizers:</span>
               <strong className="text-white">Ganpati Raj</strong>
               <span className="text-slate-400 font-normal">(Founder @ GRID)</span>
-              <span>&</span>
+              <span>,</span>
               <strong className="text-white">Krishan Lal</strong>
               <span className="text-slate-400 font-normal">(Co-Founder @ GRID)</span>
+              <span>&</span>
+              <strong className="text-white">Dev Upadhyay</strong>
+              <span className="text-slate-400 font-normal">(Lead Organizer)</span>
             </div>
 
             <p className="text-sm md:text-base text-slate-200 leading-relaxed font-medium">

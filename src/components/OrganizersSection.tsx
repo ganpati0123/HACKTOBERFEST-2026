@@ -19,62 +19,74 @@ export const OrganizersSection: React.FC = () => {
         </p>
       </div>
 
-      {/* Executive Leadership Grid (Ganpati Raj & Krishan Lal) */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      {/* Executive Leadership Grid (Ganpati Raj, Krishan Lal & Dev Upadhyay) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         {ORGANIZERS_DATA.map((org, idx) => {
           const isGold = idx === 0;
+          const isCyan = idx === 1;
+          const isEmerald = idx === 2;
+
+          let cardStyle = 'glass-panel-emerald border-2 border-emerald-500/40 glow-emerald';
+          let ambientBg = 'bg-emerald-500/15';
+          let avatarStyle = 'bg-gradient-to-br from-emerald-400 via-teal-500 to-emerald-700 text-slate-950 border-emerald-300';
+          let roleTextColor = 'text-emerald-300';
+          let badgeStyle = 'bg-emerald-400/10 text-emerald-300 border-emerald-400/30';
+          let quoteColor = 'text-emerald-400';
+
+          if (isGold) {
+            cardStyle = 'glass-panel-gold border-2 border-amber-500/40 glow-gold';
+            ambientBg = 'bg-amber-500/15';
+            avatarStyle = 'bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 text-slate-950 border-amber-300';
+            roleTextColor = 'text-amber-300';
+            badgeStyle = 'bg-amber-400/10 text-amber-300 border-amber-400/30';
+            quoteColor = 'text-amber-400';
+          } else if (isCyan) {
+            cardStyle = 'glass-panel-cyan border-2 border-cyan-500/40 glow-cyan';
+            ambientBg = 'bg-cyan-500/15';
+            avatarStyle = 'bg-gradient-to-br from-cyan-400 via-blue-500 to-cyan-700 text-slate-950 border-cyan-300';
+            roleTextColor = 'text-cyan-300';
+            badgeStyle = 'bg-cyan-400/10 text-cyan-300 border-cyan-400/30';
+            quoteColor = 'text-cyan-400';
+          }
+
           return (
             <div
               key={org.name}
-              className={`rounded-3xl p-6 md:p-8 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:scale-[1.01] shadow-2xl ${
-                isGold 
-                  ? 'glass-panel-gold border-2 border-amber-500/40 glow-gold' 
-                  : 'glass-panel-cyan border-2 border-cyan-500/40 glow-cyan'
-              }`}
+              className={`rounded-3xl p-6 md:p-7 flex flex-col justify-between relative overflow-hidden transition-all duration-300 hover:scale-[1.01] shadow-2xl ${cardStyle}`}
             >
               {/* Ambient backdrop */}
               <div 
-                className={`absolute -top-20 -right-20 w-52 h-52 rounded-full blur-3xl pointer-events-none ${
-                  isGold ? 'bg-amber-500/15' : 'bg-cyan-500/15'
-                }`}
+                className={`absolute -top-20 -right-20 w-52 h-52 rounded-full blur-3xl pointer-events-none ${ambientBg}`}
               />
 
               <div className="space-y-6 relative z-10">
                 {/* Header Profile Lockup */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-3.5">
                     {/* Avatar Initials Badge */}
                     <div 
-                      className={`w-16 h-16 rounded-2xl flex items-center justify-center text-xl font-extrabold font-mono shadow-xl border-2 shrink-0 ${
-                        isGold
-                          ? 'bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 text-slate-950 border-amber-300'
-                          : 'bg-gradient-to-br from-cyan-400 via-blue-500 to-cyan-700 text-slate-950 border-cyan-300'
-                      }`}
+                      className={`w-14 h-14 rounded-2xl flex items-center justify-center text-lg font-extrabold font-mono shadow-xl border-2 shrink-0 ${avatarStyle}`}
                     >
                       {org.initials}
                     </div>
 
                     <div>
                       <div className="flex items-center gap-2">
-                        <h3 className="text-xl sm:text-2xl font-bold font-display text-white">
+                        <h3 className="text-xl font-bold font-display text-white">
                           {org.name}
                         </h3>
                         <span className="p-1 rounded-full bg-emerald-500/20 text-emerald-400" title="Verified MLH Organizer">
                           <Shield className="w-3.5 h-3.5" />
                         </span>
                       </div>
-                      <div className={`text-xs font-semibold mt-0.5 ${isGold ? 'text-amber-300' : 'text-cyan-300'}`}>
+                      <div className={`text-xs font-semibold mt-0.5 ${roleTextColor}`}>
                         {org.role}
                       </div>
                     </div>
                   </div>
 
                   {/* Badge */}
-                  <span className={`text-[10px] font-mono font-bold tracking-wider uppercase px-2.5 py-1 rounded-lg border self-start sm:self-auto ${
-                    isGold
-                      ? 'bg-amber-400/10 text-amber-300 border-amber-400/30'
-                      : 'bg-cyan-400/10 text-cyan-300 border-cyan-400/30'
-                  }`}>
+                  <span className={`text-[10px] font-mono font-bold tracking-wider uppercase px-2.5 py-1 rounded-lg border self-start sm:self-auto ${badgeStyle}`}>
                     {org.badge}
                   </span>
                 </div>
@@ -92,18 +104,18 @@ export const OrganizersSection: React.FC = () => {
                 </div>
 
                 {/* Organizer Vision Thought Quote */}
-                <div className="p-4 sm:p-5 rounded-2xl bg-black/60 border border-white/10 relative">
-                  <Quote className={`w-6 h-6 absolute top-3 right-3 opacity-30 ${isGold ? 'text-amber-400' : 'text-cyan-400'}`} />
+                <div className="p-4 rounded-2xl bg-black/60 border border-white/10 relative">
+                  <Quote className={`w-5 h-5 absolute top-3 right-3 opacity-30 ${quoteColor}`} />
                   <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-400 mb-1">
                     ORGANIZER'S VISION & THOUGHT
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-200 italic leading-relaxed">
+                  <p className="text-xs text-slate-200 italic leading-relaxed">
                     "{org.visionQuote}"
                   </p>
                 </div>
 
                 {/* Bio paragraph */}
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   {org.bio}
                 </p>
               </div>
@@ -170,7 +182,7 @@ export const OrganizersSection: React.FC = () => {
               Core Organizing Committee & Lead Contributors
             </h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Dedicated student leads driving operations, sponsorships, technical tooling, and mentorship.
+              Dedicated student leads driving campus outreach, technical tooling, and open-source mentorship.
             </p>
           </div>
           <span className="text-xs font-mono font-bold text-cyan-400 bg-cyan-950/60 px-3 py-1 rounded-lg border border-cyan-500/30 self-start sm:self-auto">
@@ -178,7 +190,7 @@ export const OrganizersSection: React.FC = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {CORE_TEAM_MEMBERS.map((member) => (
             <div
               key={member.name}

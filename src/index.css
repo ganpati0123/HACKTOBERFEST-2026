@@ -42,6 +42,13 @@
   border: 1px solid rgba(34, 211, 238, 0.22);
 }
 
+.glass-panel-emerald {
+  background: rgba(6, 24, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
 /* Custom subtle glowing effects */
 .glow-gold {
   box-shadow: 0 0 35px -5px rgba(217, 169, 78, 0.25);
@@ -49,6 +56,10 @@
 
 .glow-cyan {
   box-shadow: 0 0 35px -5px rgba(34, 211, 238, 0.25);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 35px -5px rgba(52, 211, 153, 0.25);
 }
 
 /* Subtle grid line background */

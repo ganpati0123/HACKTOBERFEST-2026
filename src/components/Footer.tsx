@@ -92,7 +92,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-1.5">
               <li>
                 <a href="#organizers" className="hover:text-amber-300 transition-colors">
-                  Lead Organizers: Ganpati Raj & Krishan Lal
+                  Lead Organizers: Ganpati Raj, Krishan Lal & Dev Upadhyay
                 </a>
               </li>
               <li>
@@ -142,7 +142,7 @@ export const Footer: React.FC = () => {
             © 2026 Major League Hacking & GRID Community. All rights reserved.
           </div>
           <div className="flex items-center gap-1 text-slate-300">
-            <span>Organized with passion by Ganpati Raj & Krishan Lal · GRID Community HIT Haldia</span>
+            <span>Organized with passion by Ganpati Raj, Krishan Lal & Dev Upadhyay · GRID Community HIT Haldia</span>
             <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" />
           </div>
         </div>

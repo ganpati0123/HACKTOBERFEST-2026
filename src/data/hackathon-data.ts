@@ -55,19 +55,24 @@ export const ORGANIZERS_DATA: OrganizerProfile[] = [
       linkedin: 'https://linkedin.com',
       instagram: 'https://www.instagram.com/grid.techhub?xtok=MXAzbHVoNjR2ajZ1dw=='
     }
+  },
+  {
+    name: 'Dev Upadhyay',
+    role: 'Lead Organizer at Voyage and Hack Day Haldia · GRID Community',
+    events: ['Hack4Haldia\'26 x Voyage (Oct 29)', 'Hacktoberfest Hack Day Haldia (Oct 31)'],
+    initials: 'DU',
+    badge: 'LEAD ORGANIZER · VOYAGE & HACK DAY HALDIA',
+    bio: 'Spearheading on-ground event management, MLH sponsor workflows, technical setup, and hacker experience across both Hack4Haldia x Voyage and Hacktoberfest Hack Day Haldia at Hotel Royal Harbour.',
+    visionQuote: 'From live projector brand showcases and high-speed local caches to direct sponsor interactions and dedicated booths at Hotel Royal Harbour, our organizing standard is simple: zero downtime and an unforgettable, world-class hackathon experience.',
+    links: {
+      instagram: 'https://www.instagram.com/grid.techhub?xtok=MXAzbHVoNjR2ajZ1dw==',
+      linkedin: 'https://linkedin.com',
+      email: 'gridcommunity.hit@gmail.com'
+    }
   }
 ];
 
 export const CORE_TEAM_MEMBERS: CoreTeamMember[] = [
-  {
-    name: 'Dev Upadhyay',
-    role: 'Core Organizer · GRID Community',
-    category: 'Core Organizer',
-    badge: 'OPERATIONS & SPONSORSHIPS',
-    initials: 'DU',
-    bio: 'Directing on-ground event execution, MLH sponsor workflows, and hacker experience at Hotel Royal Harbour.',
-    visionQuote: 'We wanted to ensure that every hacker walks into Hotel Royal Harbour and feels world-class hospitality, seamless WiFi, and instant mentor support.'
-  },
   {
     name: 'Mayank Raj',
     role: 'Core Organizer · GRID Community',
@@ -111,7 +116,7 @@ export const EVENTS_DATA: Record<string, HackathonEvent> = {
     registrationUrl: 'https://events.mlh.com/events/15469-hacktoberfest-hack-day-haldia-x-voyage?_gl=1*1217az1*_ga*MTkzNDU0Njc2My4xNzkyOTY3NTAz*_ga_E5KT6TC4TK*czE3OTI5Njc1MDMkbzEkZzEkdDE3OTI5Njc1MDgkajU1JGwwJGgw',
     summary: 'An 8-hour AI-powered hackathon where each team will receive a randomly assigned open-source repository with a starter codebase and a challenge brief in Markdown and transform it into a live functional solution. Teams are encouraged to leverage AI coding and dev tools.',
     keyHighlights: [
-      'Lead Organizers: Ganpati Raj & Krishan Lal',
+      'Lead Organizers: Ganpati Raj, Krishan Lal & Dev Upadhyay',
       'One repo. One challenge. Eight hours. What can your team build? ⚔️',
       'Randomly assigned open-source repository starter + Markdown challenge brief',
       'AI coding tools & workflows encouraged (Cursor, Claude Code, Gemini, Copilot, v0)',
@@ -140,7 +145,7 @@ export const EVENTS_DATA: Record<string, HackathonEvent> = {
     registrationUrl: 'https://events.mlh.com/events/15005-hacktoberfest-hack-day-haldia-x-grid-community?_gl=1*d9z7gh*_ga*MTkzNDU0Njc2My4xNzkyOTY3NTAz*_ga_E5KT6TC4TK*czE3OTI5Njc1MDMkbzEkZzEkdDE3OTI5Njc1NDMkajIwJGwwJGgw',
     summary: 'Join us for 12 hours of learning, contributing, building, and connecting with fellow developers as we celebrate Hacktoberfest 2026 with an MLH Hack Day! AI and Open Source belong to everyone. 🤝🛡️',
     keyHighlights: [
-      'Lead Organizer: Ganpati Raj with GRID Community HIT Haldia',
+      'Lead Organizers: Ganpati Raj & Dev Upadhyay with GRID Community HIT Haldia',
       '12 Hours of hands-on open source contribution sprints and technical workshops',
       'Networking with 2000+ developer community spanning IIT, NIT, IIIT & HIT Haldia',
       'Venue: Hotel Royal Harbour, Kshudiram Square, Haldia',
